@@ -1,53 +1,42 @@
-
-<html lang="en" >
-<head><link rel="stylesheet" href="game-store/style.css">
-
-
-  <meta charset="UTF-8">
-  <title>game store</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head><link rel="stylesheet" href="game-store/style.css">
-
-
-<body><script src="game-store/script.js"></script>
-
-<!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="fr">
-<head><link rel="stylesheet" href="game-store/style.css">
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site</title>
-    <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="style.css">
-</head><link rel="stylesheet" href="game-store/style.css">
-
-
-<body><script src="game-store/script.js"></script>
-
- 
-
-    <!-- Contenu de ton site -->
-
-    <!-- Lien vers le fichier JS -->
-    <script src="script.js"></script>
-
-</body><script src="game-store/script.js"></script>
-
-</html>
-
-
-  <link rel="stylesheet" href="style.css?v=1.0">
-<script src="script.js?v=1.0"></script>
-
-
 
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Storee</title>
+    <!-- Lien vers le fichier CSS dans le sous-dossier 'game-store' -->
+    <link rel="stylesheet" href="game-store/style.css">
 </head>
+
+<body>
+
+    <div class="site-header">
+        <h1>Game Storee</h1>
+        <p>Bienvenue dans notre magasin de jeux !</p>
+    </div>
+
+    <!-- Zone de recherche -->
+    <input type="text" id="searchInput" placeholder="Rechercher un jeu..." onkeyup="searchGames()">
+
+    <!-- Bouton pour faire défiler la page -->
+    <button id="scrollDownBtn" onclick="scrollDown()">Descendre</button>
+
+    <!-- Conteneur des jeux -->
+    <div class="games-container">
+        <div class="game-card">
+            <h3>Jeu 1</h3>
+            <a href="#" class="buy-button">Acheter</a>
+        </div>
+        <!-- Tu peux ajouter ici d'autres cartes de jeux -->
+    </div>
+
+    <!-- Lien vers le fichier JavaScript dans le sous-dossier 'game-store' -->
+    <script src="game-store/script.js"></script>
+
+</body>
+
+</html>
 
 
 <!-- Le bouton de défilement vers le bas -->
