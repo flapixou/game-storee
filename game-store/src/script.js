@@ -31,3 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollBtn.addEventListener('click', scrollDown);
     }
 });
+function exampleFunction() {
+    alert("JavaScript fonctionne !");
+}
+
+// Ton code JavaScript ici

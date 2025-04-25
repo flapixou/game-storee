@@ -226,3 +226,9 @@ body::after {
 .buy-button:hover {
   background-color: #bb86fc;
 }
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Ajoute ici tout le style que tu veux */
