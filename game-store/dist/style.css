@@ -1,19 +1,91 @@
-/* Assure-toi que la page puisse défiler si le contenu est plus grand que la fenêtre */
+/* Style général de la page */
 body {
-    overflow-y: auto; /* Permet le défilement vertical */
-    height: 100vh; /* Assure que la hauteur du body soit celle de la fenêtre */
+    background-color: #0a001a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-
-/* Ajout du défilement fluide */
-html {
-    scroll-behavior: smooth; /* Permet un défilement fluide */
+/* En-tête du site */
+.site-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    color: #fff;
+    background: linear-gradient(to right, #1f0036, #3c005e);
+    box-shadow: 0 0 20px #7e22ce;
+    border-bottom: 2px solid #9333ea;
 }
 
+/* Titre principal */
+.site-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #c084fc;
+    text-shadow: 0 0 10px #9333ea, 0 0 20px #9333ea;
+}
 
+/* Sous-titre */
+.site-header p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Zone de recherche */
+#searchInput {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #a855f7;
+    border-radius: 10px;
+    background-color: #1a1a2e;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 10px #a855f7, 0 0 20px #6b21a8;
+    transition: 0.3s ease-in-out;
+}
+
+#searchInput::placeholder {
+    color: #aaa;
+}
+
+#searchInput:focus {
+    box-shadow: 0 0 20px #c084fc, 0 0 30px #9333ea;
+}
+
+/* Conteneur des jeux */
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Carte de jeu */
+.game-card {
+    background: rgba(30, 0, 60, 0.7);
+    border: 1px solid #3f0f6c;
+    border-radius: 12px;
+    padding: 20px;
+    color: #ffffff;
+    transition: transform 0.2s ease;
+    backdrop-filter: blur(8px);
+}
+
+.game-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #9333ea, 0 0 25px #a855f7;
+    transition: all 0.3s ease;
+}
+
+/* Bouton de recherche */
 #scrollDownBtn {
-    position: fixed; /* Placer le bouton en bas de l'écran */
+    position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #8e44ad;
@@ -29,6 +101,7 @@ html {
 #scrollDownBtn:hover {
     background-color: #6c3483;
     box-shadow: 0 0 20px rgba(142, 68, 173, 1);
+}
 }
 
 /* === BASE GLOBALE === */
