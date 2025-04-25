@@ -1,22 +1,25 @@
-// Fonction de recherche
+// Fonction de recherche des jeux
 function searchGames() {
-    const searchQuery = document.getElementById('search-bar').value.toLowerCase();
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
     const games = document.querySelectorAll('.game-card');
 
     games.forEach(game => {
-        const titleElement = game.querySelector('h3');
-        const gameName = titleElement ? titleElement.textContent.toLowerCase() : '';
-
-        game.style.display = gameName.includes(searchQuery) ? 'block' : 'none';
+        const gameName = game.querySelector('h3').textContent.toLowerCase();
+        if (gameName.includes(searchQuery)) {
+            game.style.display = 'block'; // Afficher si le jeu correspond à la recherche
+        } else {
+            game.style.display = 'none'; // Masquer si le jeu ne correspond pas
+        }
     });
 }
 
-// Fonction de scroll vers le bas
+// Fonction pour faire défiler la page vers le bas
 function scrollDown() {
     window.scrollBy({
-        top: window.innerHeight,
-        behavior: 'smooth'
+        top: window.innerHeight, // Défilement d'une hauteur d'écran
+        behavior: 'smooth' // Défilement fluide
     });
+}
 }
 
 // Lier les événements (si ce n'est pas déjà fait dans le HTML)
