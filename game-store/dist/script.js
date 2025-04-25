@@ -1,3 +1,5 @@
+console.log("Script chargé avec succès!");
+
 // Fonction de recherche des jeux
 function searchGames() {
     const searchQuery = document.getElementById('searchInput').value.toLowerCase();
