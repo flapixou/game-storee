@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Storee</title>
-    <!-- Lien vers le fichier CSS dans le sous-dossier 'game-store' -->
-    <link rel="stylesheet" href="game-store/style.css">
+    <title>Mon site de jeux</title>
+    <!-- Le fichier CSS doit être dans <head> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <h1>Bienvenue sur mon site de jeux !</h1>
 
-    <div class="site-header">
-        <h1>Game Storee</h1>
-        <p>Bienvenue dans notre magasin de jeux !</p>
-    </div>
+    <!-- Ton contenu principal ici, comme les cartes de jeux -->
 
-    <!-- Zone de recherche -->
-    <input type="text" id="searchInput" placeholder="Rechercher un jeu..." onkeyup="searchGames()">
-
-    <!-- Bouton pour faire défiler la page -->
-    <button id="scrollDownBtn" onclick="scrollDown()">Descendre</button>
-
-    <!-- Conteneur des jeux -->
-    <div class="games-container">
-        <div class="game-card">
-            <h3>Jeu 1</h3>
-            <a href="#" class="buy-button">Acheter</a>
-        </div>
-        <!-- Tu peux ajouter ici d'autres cartes de jeux -->
-    </div>
-
-    <!-- Lien vers le fichier JavaScript dans le sous-dossier 'game-store' -->
-    <script src="game-store/script.js"></script>
-
+    <!-- Le fichier JS doit être avant </body> -->
+    <script src="script.js"></script>
 </body>
+</html>
+
 
 </html>
 
